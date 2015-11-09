@@ -1,0 +1,19 @@
+#version 330
+
+in vec3 LightIntensity;
+uniform vec3 objectColor;
+uniform vec3 lightColor;
+
+out vec4 gl_FragColor;
+
+void main(){
+	float ambientStrength = 0.5f;
+    vec3 ambient = ambientStrength * lightColor;
+
+    vec3 result = ambientStrength * objectColor*LightIntensity;
+	
+    //color = vec4(result, 1.0f);
+
+
+	gl_FragColor = vec4 (result, 1.0);
+}

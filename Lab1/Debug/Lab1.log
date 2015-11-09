@@ -1,0 +1,15 @@
+﻿Build started 08/11/2015 16:32:09.
+     1>Project "C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab5\Lab1\Lab1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab5\assimp\include" /I"C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab1\freeglut\include" /I"C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab1\glew-1.10.0\include" /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>c:\users\deirdre meehan\desktop\computergraphics\lab5\lab1\main.cpp(261): warning C4305: 'argument' : truncation from 'double' to 'float'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab5\Debug\Lab1.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab5\assimp\lib\Debug" /LIBPATH:"C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab1\glew-1.10.0\lib\Release\Win32" /LIBPATH:"C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab1\freeglut\lib" freeglut.lib glew32.lib assimp.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab5\Debug\Lab1.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab5\Debug\Lab1.lib" /MACHINE:X86 Debug\main.obj
+         Debug\maths_funcs.obj
+         Lab1.vcxproj -> C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab5\Debug\Lab1.exe
+     1>Done Building Project "C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab5\Lab1\Lab1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.83
