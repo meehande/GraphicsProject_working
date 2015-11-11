@@ -23,15 +23,18 @@
     <ClCompile Include="maths_funcs.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="..\Shaders\lampVertexShader.txt" />
     <Text Include="..\Shaders\simpleFragmentShader.txt" />
     <Text Include="..\Shaders\simpleVertexShader.txt" />
     <Text Include="lampFragmentShader.txt" />
-    <Text Include="lampVertexShader.txt" />
     <Text Include="lightingFragmentShader.txt" />
     <Text Include="lightingVertexShader.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Shaders\monkeyhead.dae" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Shaders\WaveTexture.jpg" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{869D5E4B-5282-429C-BD60-199A138E3DE2}</ProjectGuid>
@@ -66,12 +69,12 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab5\assimp\include;C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab1\freeglut\include;C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab1\glew-1.10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab5\soil\Simple OpenGL Image Library\src;C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab5\assimp\include;C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab1\freeglut\include;C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab1\glew-1.10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab5\assimp\lib\Debug;C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab1\glew-1.10.0\lib\Release\Win32;C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab1\freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>freeglut.lib;glew32.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab5\soil\Simple OpenGL Image Library\lib;C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab5\assimp\lib\Debug;C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab1\glew-1.10.0\lib\Release\Win32;C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab1\freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut.lib;glew32.lib;assimp.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -80,14 +83,14 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab5\assimp\include;C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab1\glew-1.10.0\include;C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab1\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab5\soil\Simple OpenGL Image Library\src;C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab5\assimp\include;C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab1\glew-1.10.0\include;C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab1\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab5\assimp\lib\Release;C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab1\freeglut\lib;C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab1\glew-1.10.0\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>freeglut.lib;glew32.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab5\soil\Simple OpenGL Image Library\lib;C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab5\assimp\lib\Release;C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab1\freeglut\lib;C:\Users\Deirdre Meehan\Desktop\ComputerGraphics\Lab1\glew-1.10.0\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut.lib;glew32.lib;assimp.lib;soil.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

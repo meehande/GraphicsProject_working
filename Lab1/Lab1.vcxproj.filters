@@ -55,10 +55,10 @@
     <Text Include="lightingFragmentShader.txt">
       <Filter>Resource Files</Filter>
     </Text>
-    <Text Include="lampVertexShader.txt">
+    <Text Include="lampFragmentShader.txt">
       <Filter>Resource Files</Filter>
     </Text>
-    <Text Include="lampFragmentShader.txt">
+    <Text Include="..\Shaders\lampVertexShader.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
@@ -66,5 +66,10 @@
     <None Include="..\Shaders\monkeyhead.dae">
       <Filter>Resource Files</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Shaders\WaveTexture.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
